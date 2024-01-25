@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "41A8CEC058C3FB7AD8CA1C32742A17F4",
+  "keywordClasses": [
+    {
+      "name": "testpack.testkey",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}
