@@ -17,7 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(3)
+
+WebUI.takeScreenshotAsCheckpoint('Sebelum Daftar', FailureHandling.STOP_ON_FAILURE)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Page_CURA Healthcare Service/select_Tokyo CURA Healthcare Center        _5b4107'), 
     'Hongkong CURA Healthcare Center', true)
@@ -40,5 +42,7 @@ WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/appointment.php#sum
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/Page_CURA Healthcare Service/h2_Appointment Confirmation'))
 
-WebUI.closeBrowser()
+WebUI.delay(3)
+
+WebUI.takeScreenshotAsCheckpoint('Setelah Daftar')
 
